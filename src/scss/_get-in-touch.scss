@@ -1,0 +1,59 @@
+// get in touch elements stylesheet
+
+.contact-link {
+  transition: .5s ease-in-out;
+  color: $color-white;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $color-mid-grey;
+    text-decoration: none;
+  }
+}
+
+.contact-form {
+  display: inline-block;
+  padding: 1.5rem 0;
+
+  &__input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    transition: .5s ease-in-out;
+    border: none;
+    background-color: $color-dark-orange;
+    color: $color-white;
+
+    &:focus {
+      border: none;
+      outline: 0;
+      background-color: $color-white;
+      color: $color-orange;
+
+      &::placeholder {
+        color: $color-orange;
+      }
+    }
+
+    &::placeholder {
+      color: $color-white;
+    }
+  }
+
+  &__submit {
+    float: right;
+    transition: .5s ease-in-out;
+    border: none;
+    border-radius: 0;
+    background-color: $color-white;
+    color: $color-dark-orange;
+
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: $color-dark-orange;
+      color: $color-white;
+    }
+  }
+}

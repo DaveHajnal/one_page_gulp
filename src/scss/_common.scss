@@ -1,0 +1,79 @@
+//common-stylesheet
+
+//sass-lint:disable no-url-domains no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700');
+
+//common-styles
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg-grey {
+  background-color: $color-grey;
+ }
+
+.bg-orange {
+  background-color: $color-orange;
+ }
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.font-white {
+  &,
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.font-mid-grey {
+  color: $color-mid-grey;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.headline {
+  @extend .font-light;
+  font-size: 3.5rem;
+}
+
+//common hover styles
+%hover-transition {
+  transition: .75s ease-in-out;
+}
+
+.hovered-menu {
+  @extend %hover-transition;
+
+  &:hover,
+  &:focus {
+    color: $color-orange;
+  }
+}
+
+.hovered-item {
+  @extend %hover-transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 12px 18px 0 $color-mid-grey;
+  }
+}
+
+.hovered-btn {
+  @extend %hover-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $color-mid-grey;
+    text-decoration: none;
+  }
+}
+

@@ -1,0 +1,46 @@
+{{!--one page content--}}
+
+{{!--header section--}}
+<header>
+    {{> headerElements}}
+</header>
+
+{{!--Jumbotron section--}}
+<section id="jumbotron" class="jumbotron bg-jumbotron">
+    {{> jumbotronElements}}
+</section>
+
+{{!--Introducing section--}}
+<section id="intro">
+    {{> introducingElements}}
+</section>
+
+{{!--Our Portfolio section--}}
+<section id="portfolio" class="bg-blue">
+    {{> carouselElements carouselElements.portfolioElements}}
+</section>
+
+{{!--Awesome Team section--}}
+<section id="team">
+    {{> teamElements}}
+</section>
+
+{{!--Blog section--}}
+<section id="blog" class="bg-blue">
+    {{> carouselElements carouselElements.blogElements}}
+</section>
+
+{{!--Happy Clients section--}}
+<section id="client" class="bg-grey">
+    {{> clientElements}}
+</section>
+
+{{!--Get in Touch section--}}
+<section id="contact" class="bg-orange">
+    {{> getInTouchElements}}
+</section>
+
+{{!--Articles section--}}
+<section id="articles" class="bg-grey">
+    {{> articleElements}}
+</section>

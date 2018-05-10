@@ -1,0 +1,46 @@
+{{!--awesome team--}}
+<div class="container">
+    <div class="text-center pt-5">
+        <h1 class="headline">{{teamElements.title}}</h1>
+        <h4 class="font-light">{{teamElements.subtitle}}</h4>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <p>{{teamElements.text}}</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        {{#each teamElements.elements}}
+        <div class="col-xl-3 col-lg-6 text-center hovered-item pt-5 pb-3 pb-3 mb-3 d-inline-block ">
+            <img class="mb-3" src="{{img}}" alt="linkedin profile pic">
+            <h5>
+                <strong>{{name}}</strong>
+            </h5>
+            <h6>{{job}}</h6>
+            <p class="mb-5">{{contentText}}</p>
+            <div class="col-lg-4 col-md-6 interaction-icons">
+                <a class="interaction-icons__bg" href="{{twitterHref}}" tabindex="0">
+                    <span>
+                        <i class="{{twitterIcon}}" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="interaction-icons__bg" href="mailto:{{mailhref}}?subject=landing_page" tabindex="0">
+                    <span>
+                        <i class="{{mailIcon}}" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="interaction-icons__bg" href="{{phoneHref}}" tabindex="0">
+                    <span>
+                        <i class="{{phoneIcon}}" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="interaction-icons__bg" href="{{personalLinkhref}}" tabindex="0">
+                    <span>
+                        <i class="{{personalLinkIcon}}" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

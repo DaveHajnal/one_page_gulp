@@ -1,0 +1,37 @@
+{{!--client elements--}}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center my-5">
+            <h1 class="headline">{{clientElements.title}}</h1>
+            <h5 class="font-light">{{clientElements.subtitle}}</h5>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        {{#each clientElements.elements}}
+        <div class="col-lg-6 mb-5">
+            <div class="hovered-item card-client media">
+                <a class="card-client__img" href="{{imgHref}}">
+                    <img class="media-object hovered-item" src="{{imgSrc}}" alt="example linkedin profile pic">
+                </a>
+                <div class="card-client__body">
+                    <p class="pb-3">{{opinion}}</p>
+                    <p class="card-client__name">
+                        {{name}}
+                        <span>
+                            <a class="card-client__url" href="{{webUrl}}">{{webName}}</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="text-center py-5">
+        {{#each clientElements.companyLogos}}
+            <a class="company-logo__url" href="{{companyLogoHref}}">
+                <img class="p-1" src="{{companyLogoSrc}}" alt="example company">
+            </a>
+        {{/each}}
+    </div>
+</div>

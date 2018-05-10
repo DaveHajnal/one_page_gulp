@@ -1,0 +1,43 @@
+{{!--portfolio elements--}}
+
+<div id="{{id}}" class="carousel slide pt-5" data-ride="carousel">
+    <ol class="carousel-indicators carousel-indicators__item">
+        <li data-target="#{{id}}" data-slide-to="0" class="active custom"></li>
+        <li data-target="#{{id}}" data-slide-to="1" class="custom"></li>
+    </ol>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center font-white">
+                <h1 class="headline">{{title}}</h1>
+                <h5 class="font-light">{{subtitle}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="container py-4">
+                <div class="row">
+                {{#each cards}}
+                    <div class="col-lg-3 col-md-6 d-inline-block text-center font-white">
+                        <img class="card__img img-fluid mb-3" src="{{img}}" alt="{{alt}}">
+                        <h5>{{itemTitle}}</h5>
+                        <p class="pb-5">{{itemSubtitle}}</p>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container py-4">
+                <div class="row">
+                    {{#each cards}}
+                    <div class="col-lg-3 col-md-6 d-inline-block text-center font-white">
+                        <img class="card__img img-fluid mb-3" src="{{img}}" alt="{{alt}}">
+                        <h5>{{itemTitle}}</h5>
+                        <p class="pb-5">{{itemSubtitle}}</p></div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

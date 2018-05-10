@@ -1,0 +1,17 @@
+// awesome team stylesheet
+
+.interaction-icons {
+  display: inline;
+  text-align: center;
+
+  &__bg {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    transition: .5s ease-in-out;
+    border-radius: 100px;
+    background-color: $color-mid-grey;
+    color: $color-white;
+  }
+}

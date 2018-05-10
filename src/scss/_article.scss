@@ -1,0 +1,39 @@
+// article stylsheet
+
+.article-row {
+  @include media-breakpoint-up(lg) {
+
+    &__item {
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid $color-mid-grey;
+
+      &:last-of-type {
+        border: none;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid $color-mid-grey;
+    color: $color-black-transparent;
+  }
+
+  &__author {
+    display: inline;
+
+    &::before {
+      content: '\02011'; //Non-breaking hyphen
+    }
+  }
+}
+
+.main-article {
+  @include media-breakpoint-down(md) {
+    border-bottom: 1px solid $color-mid-grey;
+  }
+
+  color: $color-black-transparent;
+}

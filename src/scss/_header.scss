@@ -1,0 +1,24 @@
+//header elements stylesheet
+
+@include media-breakpoint-down(lg) {
+  .header-nav {
+    &__items {
+      margin: 10px;
+    }
+  }
+}
+
+.header-nav {
+  background-color: $color-black;
+
+  &__items {
+    justify-content: flex-end;
+  }
+
+
+  &__button {
+    margin: 5px;
+    border: 2px solid $color-white;
+  }
+}
+

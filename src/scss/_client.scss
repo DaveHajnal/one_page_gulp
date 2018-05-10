@@ -1,0 +1,43 @@
+//client elements stylesheet
+
+.card-client {
+  height: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: $color-white;
+
+  &__img {
+    margin-top: 15px;
+  }
+
+  &__body {
+    margin: 15px;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 10px;
+    margin: 1rem;
+    font-weight: 300;
+
+    &::before {
+      content: '\02015'; //horizontal bar
+     }
+  }
+
+  &__url {
+    &,
+    &:hover {
+      color: $color-crimson;
+    }
+  }
+}
+
+.company-logo__url {
+  &,
+  &:focus,
+  &:hover {
+    border: none;
+    text-decoration: none;
+  }
+}

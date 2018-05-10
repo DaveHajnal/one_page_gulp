@@ -1,0 +1,21 @@
+//carousel elements stylesheet
+
+.carousel-indicators__item {
+  .custom {
+    display: inline-block;
+    max-width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+    border: 3px solid $color-white;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 0 0 2px $color-black;
+    cursor: pointer;
+
+    &.active {
+      width: 20px;
+      height: 20px;
+      background-color: $color-white;
+    }
+  }
+}

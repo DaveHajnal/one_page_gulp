@@ -1,0 +1,18 @@
+{{!--header elements--}}
+
+<nav class="navbar navbar-expand-lg header-nav">
+    <div class="container">
+        <button class="navbar-toggler header-nav__button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars align-middle font-white" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse header-nav__items" id="navbarNav">
+            <ul class="navbar-nav">
+                {{#each headerElements}}
+                    <li role="menuitem">
+                        <a class="nav-link hovered-menu font-white" href="#{{id}}">{{title}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</nav>
