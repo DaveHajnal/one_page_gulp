@@ -5,41 +5,39 @@
 
         {{!--Todo:bar nem volt elvaras, de kesobbiekben hasznos, ha mobil nézetben a fohir az elso--}}
         <div class="col-lg-6 order-lg-2">
-            <article class="main-article text-left text-lg-center">
+            <article class="main-article text-left text-lg-center mb-3">
                 <a href="#contact">
                     <img  class="img-fluid w-100 px-0 px-lg-5" src="{{articleElements.mainArticle.img}}" alt="{{articleElements.mainArticle.title}}">
                 </a>
-                <a href="#articles">
-                    <h1 class="font-weight-bold ">{{articleElements.mainArticle.title}}</h1>
-                    <h6 class="font-weight-bold">{{articleElements.mainArticle.lead}}</h6>
+                <a class="article-row__link" href="#articles">
+                    <h1 class="font-weight-light">{{articleElements.mainArticle.title}}</h1>
+                    <h6 class="font-weight-light">{{articleElements.mainArticle.lead}}</h6>
                 </a>
-                <a href="#articles">
-                    <time datetime="{{articleElements.mainArticle.date}}">{{articleElements.mainArticle.date}}</time>
+                <a class="article-row__link" href="#articles">
+                    <time class="font-weight-light" datetime="{{articleElements.mainArticle.date}}">{{articleElements.mainArticle.date}}</time>
                 </a>
-                <a href="#articles">
+                <a class="article-row__link" href="#articles">
                     <p class="article-row__author">{{articleElements.mainArticle.author}}</p>
                 </a>
-
-                </article>
             </article>
         </div>
         <div class="col-lg-3 order-lg-1">
             <aside class="article-row">
-                {{# each articleElements.leftArticles}}
+                {{#each articleElements.leftArticles}}
                     <article class="article-row__item">
                         {{#if img}}
                             <a href="#articles">
                                 <img class="img-fluid w-100" src="{{img}}" alt="{{title}}">
                             </a>
                         {{/if}}
-                        <a href="#articles">
-                            <h5 class="font-weight-bold">{{title}}</h5>
+                        <a class="article-row__link" href="#articles">
+                            <h5>{{title}}</h5>
                         </a>
                         <div>
-                            <a href="#articles">
-                                <time datetime="{{date}}">{{date}}</time>
+                            <a class="article-row__link" href="#articles">
+                                <time class="font-weight-light" datetime="{{date}}">{{date}}</time>
                             </a>
-                            <a href="#articles">
+                            <a class="article-row__link" href="#articles">
                                 <p class="article-row__author">{{author}}</p>
                             </a>
                         </div>
@@ -48,21 +46,23 @@
             </aside>
         </div>
         <div class="col-lg-3 order-lg-3">
-            <aside>
+            <aside class="article-row">
                 {{#each articleElements.rightArticles}}
                 <article class="article-row__item mb-3">
                     {{#if img}}
-                        <img class="w-100" src="{{img}}" alt="{{title}}">
+                        <a href="#contact">
+                            <img class="w-100" src="{{img}}" alt="{{title}}">
+                        </a>
                     {{/if}}
                     <article>
-                        <a href="#articles">
-                            <h5 class="font-weight-bold py-1">{{title}}</h5>
+                        <a class="article-row__link" href="#articles">
+                            <h5 class="py-1">{{title}}</h5>
                         </a>
                         <div class="py-1">
-                            <a href="#articles">
-                                <time datetime="{{date}}">{{date}}</time>
+                            <a class="article-row__link" href="#articles">
+                                <time class="font-weight-light" datetime="{{date}}">{{date}}</time>
                             </a>
-                            <a href="#articles">
+                            <a class="article-row__link" href="#articles">
                                 <p class="d-inline article-row__author">{{author}}</p>
                             </a>
                         </div>

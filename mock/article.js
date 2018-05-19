@@ -46,4 +46,3 @@ const articleElements = {
 module.exports = {
   articleElements: articleElements
 }
-
