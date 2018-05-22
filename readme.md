@@ -25,8 +25,8 @@ https://nodejs.org/en/#download
 
 Dependencies:
 
-Bootstrap 4 beta
-http://getbootstrap.com/docs/4.0/getting-started/download/
+Bootstrap 4
+https://getbootstrap.com/docs/4.1/getting-started/download/
 
 `npm i -S bootstrap`
 
