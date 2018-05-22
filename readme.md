@@ -28,7 +28,7 @@ Dependencies:
 Bootstrap 4 beta
 http://getbootstrap.com/docs/4.0/getting-started/download/
 
-`npm i -S bootstrap@4.0.0-beta.2`
+`npm i -S bootstrap`
 
 Express setup:
 https://expressjs.com/
